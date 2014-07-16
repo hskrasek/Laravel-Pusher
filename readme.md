@@ -1,3 +1,21 @@
+## Laravel & Gulp Setup
+
+I have been playing around with using Gulp in a Laravel based front-end. This is the basic setup that I came up with, and will be tweaking constantly as I learn more and more about Gulp, and come up with crazier and crazier ideas.
+
+What I consider to be my default Bower includes are: Bootstrap3 (SASS version), Underscore, momentjs, and livestampjs. (Bootstrap install jQuery by default)
+
+At the moment the current Gulpfile is setup to build your application specific CSS and Javascript, as well as the various component and plugin files needed from Bower components. 
+
+### Plans for the future
+
+* Working Imagemin with Blade Templates.
+* PHPUnit / Behat Test Runner
+* Optional CDN Upload of assets. (That way you can benefit from the speed gain from not loading everything from the same domain)
+* Better Logging, either to screen, file or both.
+* And more (as I think of it)
+
+Included below is the README contents of the Laravel Framework.
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
