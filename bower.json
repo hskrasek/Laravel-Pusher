@@ -1,0 +1,11 @@
+{
+  "name": "application-name-here",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap-sass": "~3.0.0",
+    "moment": "~2.7.0",
+    "livestampjs": "~1.1.2",
+    "underscore": "~1.6.0"
+  }
+}
