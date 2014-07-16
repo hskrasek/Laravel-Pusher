@@ -1,0 +1,23 @@
+{
+  "name": "application-name-here",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^0.1.1",
+    "gulp": "^3.8.6",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-concat": "^2.3.3",
+    "gulp-ruby-sass": "^0.6.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^2.2.20",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-csso": "^0.2.9",
+    "gulp-jshint": "^1.7.1",
+    "gulp-plumber": "^0.6.3",
+    "lazypipe": "^0.2.1",
+    "gulp-if": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
