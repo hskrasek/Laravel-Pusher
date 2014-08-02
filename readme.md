@@ -1,43 +1,17 @@
-## Laravel & Gulp Setup
+## Laravel - Pusher
 
-I have been playing around with using Gulp in a Laravel based front-end. This is the basic setup that I came up with, and will be tweaking constantly as I learn more and more about Gulp, and come up with crazier and crazier ideas.
+One night I decided to play around with [http://pusher.com/](Pusher.JS), and decided to use Laravel as the backend server. This particular setup makes use of my [https://github.com/hskrasek/Laravel-Gulp](Laravel-Gulp) repository, making it easier to manage all the front-end assets.
 
-What I consider to be my default Bower includes are: Bootstrap3 (SASS version), Underscore, momentjs, and livestampjs. (Bootstrap install jQuery by default)
+You can view a demo of this [http://pusher.hunterskrasek.com](here), but be warned, this demo is using my free API keys, so if someone decides to spam the demo alot, my monthly usage will be maxed out. This is a quick and dirty implementation, so if that happens and things error out, who knows what will happen.
 
-At the moment the current Gulpfile is setup to build your application specific CSS and Javascript, as well as the various component and plugin files needed from Bower components. 
+### Want to expand off this?
 
-### Plans for the future
+Would make me happy if I found out people actually found this useful and decided to clone it and work off of my setup. To get everything going though, you'll need to run the following:
 
-* Working Imagemin with Blade Templates.
-* PHPUnit / Behat Test Runner
-* Optional CDN Upload of assets. (That way you can benefit from the speed gain from not loading everything from the same domain)
-* Better Logging, either to screen, file or both.
-* And more (as I think of it)
+```
+composer install && npm install && gulp dev
+```
 
-Included below is the README contents of the Laravel Framework.
+Any changes to JavaScript, CSS, or Images should be made within the `app/assets` directory. You can change this, but you'll need to update the Gulpfile accordingly. 
 
-## Laravel PHP Framework
-
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
-
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
-
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Going to use this in production? Hope you did a lot of cleanup and testing, but make sure you run `gulp` without anything extra for minified versions of CSS and JS.
