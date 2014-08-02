@@ -1,8 +1,8 @@
 ## Laravel - Pusher
 
-One night I decided to play around with [http://pusher.com/](Pusher.JS), and decided to use Laravel as the backend server. This particular setup makes use of my [https://github.com/hskrasek/Laravel-Gulp](Laravel-Gulp) repository, making it easier to manage all the front-end assets.
+One night I decided to play around with [Pusher.JS](http://pusher.com/), and decided to use Laravel as the backend server. This particular setup makes use of my [Laravel-Gulp](https://github.com/hskrasek/Laravel-Gulp) repository, making it easier to manage all the front-end assets.
 
-You can view a demo of this [http://pusher.hunterskrasek.com](here), but be warned, this demo is using my free API keys, so if someone decides to spam the demo alot, my monthly usage will be maxed out. This is a quick and dirty implementation, so if that happens and things error out, who knows what will happen.
+You can view a demo of this [here](http://pusher.hunterskrasek.com), but be warned, this demo is using my free API keys, so if someone decides to spam the demo alot, my monthly usage will be maxed out. This is a quick and dirty implementation, so if that happens and things error out, who knows what will happen.
 
 ### Want to expand off this?
 
